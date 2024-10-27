@@ -1,0 +1,31 @@
+[project]
+name = "llm-whisper-api"
+version = "0.1"
+description = "Run transcriptions using the OpenAI Whisper API"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+requires-python = ">=3.9"
+dependencies = [
+    "llm",
+    "httpx"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/simonw/llm-whisper-api"
+Changelog = "https://github.com/simonw/llm-whisper-api/releases"
+Issues = "https://github.com/simonw/llm-whisper-api/issues"
+CI = "https://github.com/simonw/llm-whisper-api/actions"
+
+[project.entry-points.llm]
+whisper_api = "llm_whisper_api"
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-httpx"]
