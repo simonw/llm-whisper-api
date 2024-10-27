@@ -33,6 +33,13 @@ You can also pass an explicit API key using `--key` like this:
 llm whisper-api audio.mp3 --key $OPENAI_API_KEY
 ```
 
+You can pipe data to the tool if you specify `-` as a filename:
+
+```bash
+curl -s 'https://static.simonwillison.net/static/2024/russian-pelican-in-spanish.mp3' \
+  | llm whisper-api -
+```
+
 ## Development
 
 To set up this plugin locally, first checkout the code. Then create a new virtual environment:
