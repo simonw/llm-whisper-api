@@ -1,6 +1,6 @@
 [project]
 name = "llm-whisper-api"
-version = "0.1"
+version = "0.1.1"
 description = "Run transcriptions using the OpenAI Whisper API"
 readme = "README.md"
 authors = [{name = "Simon Willison"}]
